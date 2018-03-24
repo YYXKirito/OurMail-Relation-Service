@@ -1,0 +1,11 @@
+relation
+	Friend-----user<-->user-----add/delete/query/block/classify
+	Belong-----user<--->group---add/delete/query/role/option/classify
+	creatTime,modifyTime
+	Extend
+		group to group
+	
+user<-->user Followship Blocklist etc.
+	id follower_id followee_id;id user_id block_id
+user<-->group Membership
+	id user_id group_id role
