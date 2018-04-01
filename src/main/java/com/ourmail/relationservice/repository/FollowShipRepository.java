@@ -9,4 +9,5 @@ import java.util.List;
 @Repository
 public interface FollowShipRepository extends CrudRepository<FollowShip, Long>{
     List<FollowShip> getFollowShipByUserId(long userId);
+    FollowShip findFollowShipById(long id);
 }

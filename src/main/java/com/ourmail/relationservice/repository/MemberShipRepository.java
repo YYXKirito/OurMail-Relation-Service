@@ -7,5 +7,6 @@ import org.springframework.data.repository.CrudRepository;
 import java.util.List;
 
 public interface MemberShipRepository extends CrudRepository<MemberShip, Long>{
-    List<FollowShip> findFriendShipByUserId(long)
+    List<MemberShip> findMemberShipByGroupId(long groupId);
+    MemberShip findMemberShipById(long id);
 }
