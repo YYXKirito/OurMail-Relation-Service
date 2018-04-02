@@ -15,6 +15,7 @@ public class FollowShipServiceImpl implements FollowShipService {
     @Autowired
     private FollowShipRepository followShipRepository;
 
+    @Override
     public void addNewFollower(long userId, long targetId) throws Exception{
         List<FollowShip> followShips=followShipRepository.getFollowShipByUserId(userId);
         FollowShip followShip=new FollowShip();
