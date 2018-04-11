@@ -9,4 +9,6 @@ import java.util.List;
 public interface MemberShipRepository extends CrudRepository<MemberShip, Long>{
     List<MemberShip> findMemberShipByGroupId(long groupId);
     MemberShip findMemberShipById(long id);
+    boolean userExistsInGroup(long userId, long groupId);
+    MemberShip findMemberShipByUserAndGroup(long userId, long groupId);
 }

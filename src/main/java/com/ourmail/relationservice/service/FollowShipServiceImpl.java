@@ -1,5 +1,6 @@
 package com.ourmail.relationservice.service;
 
+import com.ourmail.relation.contract.RelationService;
 import com.ourmail.relationservice.contract.FollowShipService;
 import com.ourmail.relationservice.domain.FollowShip;
 import com.ourmail.relationservice.repository.FollowShipRepository;
@@ -14,6 +15,8 @@ import java.util.List;
 public class FollowShipServiceImpl implements FollowShipService {
     @Autowired
     private FollowShipRepository followShipRepository;
+
+    RelationService relationService;
 
     @Override
     public void addNewFollower(long userId, long targetId) throws Exception{
