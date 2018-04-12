@@ -8,7 +8,5 @@ class Label {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     var id=0L
-    var groupId=0L
-    var userId=0L
-    var labelId=0L
+    var labelName=""
 }

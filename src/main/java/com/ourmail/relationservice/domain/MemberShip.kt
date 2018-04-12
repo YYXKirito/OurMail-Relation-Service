@@ -9,10 +9,10 @@ import javax.persistence.Id
 class MemberShip {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    var id=0L;
-    var userId=0L;
-    var groupId=0L;
-    var role=0;
+    var id=0L
+    var userId=0L
+    var groupId=0L
+    var role=0
     var alias=""
     var joinDate=0L
 }
